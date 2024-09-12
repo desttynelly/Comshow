@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>load</title>
+
+    <style>
+        body{
+            background-color: white;
+        }
+        .hold{
+            display: 
+            none
+            ;
+            background-color: black;
+            width: 1368px;
+            height: 634px;
+            margin-top: -150px;
+            margin-left: -10px;
+        }
+        .hold.active{
+            display: none;
+        }
+        .body{
+            display: none;
+            background-color: red;
+            width: 400px;
+            height: 20px;
+            transform: translateY(300px);
+            margin-left: 500px;
+            border-radius: 50px;
+        }
+        .inner{
+            transform: translateY(3px);
+            margin-left: 5px;
+            border-radius: 50px;
+            background: white;
+            height: 13px;
+            width: 390px;
+            animation: long 5s 0.2s 1 ;
+        }
+        @keyframes long {
+            0%{
+                width: 20px;
+            }
+            50%{
+                width: 200px;
+            }
+            100%{
+                width: 390px;
+            }
+        }
+.text2{
+    display: none;
+            transform: translateY(180px);
+            margin-left: 590px;
+        }
+
+        .text2.active{
+            display: none;
+        }
+        .text2 p{
+            font-size: 40px;
+            font-weight: 700;
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: big 2s 6;
+        }
+
+        @keyframes big{
+            0%{
+                font-size: 40px;
+            }
+            50%{
+                font-size: 20px;
+                padding: 25px;
+                opacity: 0.5;
+                margin: 30px;
+            }
+            100%{
+                font-size: 40px;
+            }
+        
+        }
+
+
+
+
+        #countdown {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#timer {
+    font-size: 2rem;
+    color: #FF9900; /* You can change this to match your site theme */
+}
+
+#timer span {
+    padding: 0 10px;
+}
+
+    </style>
+</head>
+<body>
+    
+
+
+    
+    <div class="text2">
+        <p>ComShow</p>
+    </div>
+    <div class="hold">
+    <div class="body">
+        <div class="inner">
+
+        </div>
+    </div>
+</div>
+
+
+<button id="btn">rabbit</button>
+
+
+            <table border="1">
+                <tr>
+                    <th>Boys</th>
+                    <th>Girls</th>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>10</td>
+                </tr>
+            </table>
+
+
+
+            <form action="">
+                <label for="">Name:</label>
+                <input type="text" name="" id="name" placeholder="Enter name here"> <br>
+
+                <label for="">Email</label>
+                <input type="text" name="" id="Email" placeholder="Enter email here"> <br>
+                
+                <button>Submit</button>
+            </form>
+
+
+
+
+            <div id="countdown">
+                <h2>Event Countdown</h2>
+                <div id="timer">
+                    <span id="days"></span> Days 
+                    <span id="hours"></span> Hours 
+                    <span id="minutes"></span> Minutes 
+                    <span id="seconds"></span> Seconds
+                </div>
+            </div>
+            
+
+    <script>
+        setTimeout(function() {
+            document.querySelector(".hold").classList.add("active")
+            document.querySelector(".text2").classList.add("active")
+        }, 5500);
+
+        document.getElementById("btn").addEventListener("click", function pop(callback){
+            pop(show)
+
+            document.querySelector(".hold").classList.remove("active")
+            document.querySelector(".text2").classList.remove("active")
+
+            
+        
+        })
+
+        
+       
+
+        setTimeout(function(){
+       
+    }, 5000)
+
+    // Set the date and time of the event
+const eventDate = new Date("August 19, 2024 16:00:59").getTime();
+
+const countdownFunction = setInterval(function() {
+    // Get current date and time
+    const now = new Date().getTime();
+
+    // Find the distance between now and the event date
+    const distance = eventDate - now;
+
+    // Time calculations for days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in the respective elements
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+
+    // If the countdown is finished, write some text
+    if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.getElementById("timer").innerText = "The event has started!";
+    }
+}, 1000);
+
+    </script>
+</body>
+</html>

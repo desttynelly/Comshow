@@ -1,0 +1,73 @@
+/* TEXT FADE-IN */
+
+@keyframes fede{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fade{
+    animation: fede 3s 1;
+}
+
+
+
+/* @keyframes turn{
+    0%{
+        transform: rotate3d(0deg);
+    }
+    100%{
+        transform: rotate3d(360deg);
+    }
+}
+.turn {
+    animation: turn 9s 1s infinite;
+} */
+
+
+/* fADE 2 FOR COIN ROLL */
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.fadee{
+    animation: fade 2s 1;
+}
+
+
+/* SLIDE IN T */
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 150px;
+    }
+}
+
+.slid{
+    opacity: 1;
+    animation: slide 3s;
+}

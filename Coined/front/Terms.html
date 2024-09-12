@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripedCoin</title>
+    <link rel="icon" href="/images/com.png">
+    <link rel="stylesheet" href="Terms.css">
+</head>
+<body>
+
+    <div class="termpop">
+        <div class="to-back">
+        <a href="About.html" class="back"><=</a>
+    </div>
+    <div class="heading">
+        <p>Terms of Service</p>
+    </div>
+
+
+    <div class="lists">
+        <p id="li1">1.  Our List one for pop</p>
+        <p id="li2">2.  Our List one for pop</p>
+        <p id="li3">3.  Our List one for pop</p>
+        <p id="li4">4.  Our List one for pop</p>
+        <p id="li6">5.  Our List one for pop</p>
+        <p>6.  Our List one for pop</p>
+        <p>7.  Our List one for pop</p>
+        <p>8.  Our List one for pop</p>
+        <p>9.  Our List one for pop</p>
+        <p>10. Our List one for pop</p>
+        <p>11. Our List one for pop</p>
+        <p>12. Our List one for pop</p>
+        <p>13. Our List one for pop</p>
+        <p>14. Our List one for pop</p>
+        <p>15. Our List one for pop</p>
+        <p>16. Our List one for pop</p>
+    </div>
+
+    <div class="popsout">
+
+        <div id="garagoo" class="popup1">
+        <p  id="top1">1.  Your popup heading will show here</p>
+
+        <p>1.1  then popup  list here, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas in hic dignissimos ducimus distinctio corrupti quod, dolore cum fugiat earum. Error hic dolores facilis assumenda exercitationem voluptatem facere odit nostrum.</p>
+
+        <p>1.2   and here again, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam quisquam distinctio id error debitis dicta voluptate possimus, sunt quaerat cupiditate dolores, odit fugit neque officia dolorem amet. Modi, consequatur!</p>
+
+        <p>1.3 and here again, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe sed a deleniti dolorum doloribus eius alias inventore dolores, cum non ducimus quia molestias! Maxime corporis at numquam libero vitae?</p>
+
+        <p>1.4 and here again, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe sed a deleniti dolorum doloribus eius alias inventore dolores, cum non ducimus quia molestias! Maxime corporis at numquam libero vitae?</p>
+
+        <p>1.5 and here again, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe sed a deleniti dolorum doloribus eius alias inventore dolores, cum non ducimus quia molestias! Maxime corporis at numquam libero vitae?</p>
+
+        <div class="but22">
+            <button id="decline1">Decline</button>
+            <button id="accept1">Accept</button>
+        </div>
+
+
+    </div>
+
+    <div id="" class="popup2">
+        <p  id="top2">1.  Your popup heading will show here</p>
+
+        <p>1.1  then popup  list here, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas in hic dignissimos ducimus distinctio corrupti quod, dolore cum fugiat earum. Error hic dolores facilis assumenda exercitationem voluptatem facere odit nostrum.</p>
+
+        <p>1.2   and here again, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ipsam quisquam distinctio id error debitis dicta voluptate possimus, sunt quaerat cupiditate dolores, odit fugit neque officia dolorem amet. Modi, consequatur!</p>
+
+        <p>1.3 and here again, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe sed a deleniti dolorum doloribus eius alias inventore dolores, cum non ducimus quia molestias! Maxime corporis at numquam libero vitae?</p>
+
+        <p>1.4 and here again, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe sed a deleniti dolorum doloribus eius alias inventore dolores, cum non ducimus quia molestias! Maxime corporis at numquam libero vitae?</p>
+
+        <p>1.5 and here again, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio saepe sed a deleniti dolorum doloribus eius alias inventore dolores, cum non ducimus quia molestias! Maxime corporis at numquam libero vitae?</p>
+
+        <div class="but202">
+            <button id="decline1">Decline</button>
+            <button id="accept1">Accept</button>
+        </div>
+        
+    </div>
+    </div>
+    
+
+    <script>
+        document.getElementById("li1").addEventListener("click", function(){
+            document.getElementById("li1").classList.add("active")
+            document.querySelector(".popup1").classList.add("active")
+            document.querySelector(".popup2").classList.remove("active")
+            document.getElementById("li2").classList.remove("active")
+        })
+       
+        document.getElementById("li2").addEventListener("click", function(){
+            document.getElementById("li1").classList.remove("active")
+            document.getElementById("li2").classList.add("active")
+            document.querySelector(".popup2").classList.add("active")
+            document.querySelector(".popup1").classList.remove("active")
+        })
+    </script>
+</body>
+</html>
